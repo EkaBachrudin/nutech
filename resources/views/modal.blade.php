@@ -24,28 +24,28 @@
             </div>
             <div class="form-group">
                 <label for="namaBarang">Nama Barang</label>
-                <input type="text" name="namaBarang" id="namaBarang" class="form-control">
+                <input type="text" name="namaBarang" id="namaBarang" class="form-control @error('namaBarang') is-invalid @enderror" autocomplete="off">
                 @error('namaBarang')
                       <small class="text-danger">{{ $message }}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="hargaBeli">Harga Beli</label>
-                <input type="text" name="hargaBeli" id="hargaBeli" class="form-control uang">
+                <input type="text" name="hargaBeli" id="hargaBeli" class="form-control uang" autocomplete="off">
                 @error('hargaBeli')
                       <small class="text-danger">{{ $message }}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="hargaJual">Harga Jual</label>
-                <input type="text" name="hargaJual" id="hargaJual" class="form-control uang">
+                <input type="text" name="hargaJual" id="hargaJual" class="form-control uang" autocomplete="off">
                 @error('hargaJual')
                       <small class="text-danger">{{ $message }}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="stok">Stok</label>
-                <input type="number" name="stok" id="stok" class="form-control" min="1">
+                <input type="number" name="stok" id="stok" class="form-control" min="1" autocomplete="off">
                 @error('stok')
                       <small class="text-danger">{{ $message }}</small>
                 @enderror
@@ -87,28 +87,28 @@
             </div>
             <div class="form-group">
                 <label for="namaBarang">Nama Barang</label>
-                <input type="text" name="namaBarang" id="namaBarang" class="form-control">
+                <input type="text" name="namaBarang" id="namaBarang" class="form-control @error('namaBarang') is-invalid @enderror" autocomplete="off">
                 @error('namaBarang')
                       <small class="text-danger">{{ $message }}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="hargaBeli">Harga Beli</label>
-                <input type="text" name="hargaBeli" id="hargaBeli" class="form-control uang">
+                <input type="text" name="hargaBeli" id="hargaBeli" class="form-control uang @error('hargaBeli') is-invalid @enderror" autocomplete="off">
                 @error('hargaBeli')
                       <small class="text-danger">{{ $message }}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="hargaJual">Harga Jual</label>
-                <input type="text" name="hargaJual" id="hargaJual" class="form-control uang">
+                <input type="text" name="hargaJual" id="hargaJual" class="form-control uang @error('hargaJual') is-invalid @enderror" autocomplete="off">
                 @error('hargaJual')
                       <small class="text-danger">{{ $message }}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="stok">Stok</label>
-                <input type="number" name="stok" id="stok" class="form-control" min="1">
+                <input type="number" name="stok" id="stok" class="form-control @error('stok') is-invalid @enderror" min="1" autocomplete="off">
                 @error('stok')
                       <small class="text-danger">{{ $message }}</small>
                 @enderror
